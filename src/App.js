@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-// import Button from "./Components/SearchBar/Button";
-import SearchBar from "./Components/SearchBar/SearchBar";
-// import VideoContainer from "./Components/SearchBar/VideoContainer";
-// import VideoList from "./Components/SearchBar/VideoList";
+// import Home from "./Pages/Home"
 // import axios from "axios";
 import "./App.css";
 require("dotenv").config();
@@ -40,9 +37,7 @@ class App extends Component {
     return (
       <>
         <div className="App">
-          <header className="App-header">
-            <SearchBar />
-          </header>{" "}
+          <header className="App-header">{/* <Home /> */}</header>{" "}
         </div>
       </>
     );
