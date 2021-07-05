@@ -8,17 +8,14 @@ class App extends Component {
   state = {};
 
   componentDidMount() {
-    console.log("Mount: Hello World");
-
     // const getVideo = axios.get(
     // `${"https://cors-anywhere.herokuapp.com/"}https://www.googleapis.com/youtube/v3/search`,
-
     //   `${"https://cors.bridged.cc/"}https://www.googleapis.com/youtube/v3/search`,
-
     //   {
     //     params: {
+    //       part: "snippet", // Shows the snippets/thumbnails...
     //       maxResults: 5, // Max Results to search YouTube API for
-          // q: "neebs", // The search term query
+    //       q: "neebs", // The search term query
     //       key: `${process.env.REACT_APP_APIKEY}`, // Obviously my key
     //     },
     //   }
@@ -32,13 +29,9 @@ class App extends Component {
     //   });
   }
 
-  componentWillUnmount() {
-    console.log("Unmount: What Just Happened?");
-  }
+  componentWillUnmount() {}
 
-  componentDidUpdate() {
-    console.log("Update: GoodBye World");
-  }
+  componentDidUpdate() {}
 
   render() {
     return (
