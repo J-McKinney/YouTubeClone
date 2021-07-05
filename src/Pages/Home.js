@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import Button from "../Components/Button/Button";
 import SearchBar from "../Components/SearchBar/SearchBar";
 // import VideoContainer from "../Components/VideoContainer/VideoContainer";
-// import VideoList from "../Components/VideoList/VideoList";
+import VideoList from "../Components/VideoList/VideoList";
 import API from "../utils/API";
 
 class Home extends Component {
@@ -48,6 +48,7 @@ class Home extends Component {
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
         />
+        <VideoList>All the things</VideoList>
       </>
     );
   }
