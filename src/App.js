@@ -1,16 +1,30 @@
 import React, { Component } from "react";
+import axios from "axios";
 import logo from "./logo.svg";
 import "./App.css";
+require("dotenv").config();
 
 // const axios = require("axios");
-// const url = "https://www.googleapis.com/youtube/v3/search";
+const url = "https://www.googleapis.com/youtube/v3/search";
 
 class App extends Component {
   state = {};
 
   componentDidMount() {
     console.log("Mount: Hello World");
-    console.log(process.env.REACT_APP_APIKEY);
+    const getVideo = url + "/neebs&key=" + process.env.REACT_APP_APIKEY;
+    axios
+      .get(getVideo)
+      .then((res) => {
+        return axios.get(getVideo);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
+  componentWillUnmount() {
+    console.log("Unmount: What Just Happened?");
   }
 
   componentDidUpdate() {
