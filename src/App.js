@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import Home from "./Pages/Home"
+import Home from "./Pages/Home";
 // import axios from "axios";
 import "./App.css";
 require("dotenv").config();
@@ -9,7 +9,7 @@ class App extends Component {
 
   componentDidMount() {
     // const getVideo = axios.get(
-    // `${"https://cors-anywhere.herokuapp.com/"}https://www.googleapis.com/youtube/v3/search`,
+    //   // `${"https://cors-anywhere.herokuapp.com/"}https://www.googleapis.com/youtube/v3/search`,
     //   `${"https://cors.bridged.cc/"}https://www.googleapis.com/youtube/v3/search`,
     //   {
     //     params: {
@@ -37,7 +37,9 @@ class App extends Component {
     return (
       <>
         <div className="App">
-          <header className="App-header">{/* <Home /> */}</header>{" "}
+          <header className="App-header">
+            <Home />
+          </header>{" "}
         </div>
       </>
     );
