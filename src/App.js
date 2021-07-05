@@ -17,9 +17,9 @@ class App extends Component {
 
     //   {
     //     params: {
-    //       maxResults: 5,
-    //       q: "neebs",
-    //       key: `${process.env.REACT_APP_APIKEY}`,
+    //       maxResults: 5, // Max Results to search YouTube API for
+          // q: "neebs", // The search term query
+    //       key: `${process.env.REACT_APP_APIKEY}`, // Obviously my key
     //     },
     //   }
     // );
