@@ -3,17 +3,14 @@
 }
 
 .form {
-  width: auto;
 }
 
 .label {
-  width: auto;
 }
 
 .formControl {
-  width: auto;
+  width: 80%;
 }
 
 .button {
-  width: auto;
 }
